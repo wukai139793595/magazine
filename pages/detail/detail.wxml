@@ -1,0 +1,44 @@
+<view>
+  <view class='classify-wrap'>
+    <text class='date'>{{recommendMsg.date}}</text>
+    <text class='title'>{{recommendMsg.title}}</text>
+    <image class='classify-cover' src='{{recommendMsg.imgSrc}}' mode='widthFix'></image>
+    <view class='classify-list'>
+      <view>+</view>
+      <view wx:for='{{collectList}}' wx:key='{{item.typeId}}' catchtap='toDetaill' data-typeid='{{item.typeId}}'>{{item.type}}</view>
+      <view>...</view>
+    </view>
+  </view>
+  <view class='article-wrap' wx:for='{{articleList}}' wx:key='item.id'>
+    <view class='per-article'>
+      <view class='like-wrap'>
+        <image class='avatar-img' src='{{item.markPeopleAvatar}}'></image>
+        <text class='nickname' space='ensp'> {{item.markPeople}}</text>
+        <text class='so-on' space='ensp'>等 </text>
+        <text class='number'>{{item.markCount}}</text>
+        <text class='mark'>人马克了</text>
+      </view>
+      <view class='article-descript-wrap'>
+        <image class='article-img' src='{{item.articleImgSrc}}' mode='widthFix'></image> 
+        <text class='descript'>{{item.articleTitle}} </text>
+      </view>
+      <view class='more-wrap'>
+        <view class='article-classify-hint'>
+            {{item.articleType}}
+        </view>
+        <view class='icon-wrap'>
+          <image class='more' src='/image/icon/Icon_more.png' bindtap='toMoreTap' data-moredata='moredata'></image>
+          <button open-type='getUserInfo' bindgetuserinfo='toGetUserInfo'>
+            <image class='relay' src='/image/icon/Icon_relay.png'></image>
+          </button>
+          <view bindtap='toChangeLike' data-index='{{index}}'>
+            <image wx:if='{{likeList[index].isLike}}' class='circle' src='/image/icon/Icon_circle.png' ></image>
+            <image wx:else src='/image/icon/Icon_circle_fill.png'></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+</view>

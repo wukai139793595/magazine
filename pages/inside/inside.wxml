@@ -1,0 +1,11 @@
+<!--pages/inside/inside.wxml-->
+
+<view class='container'>
+  <view class='image-wrap'>
+    <image src='/image/picture.png' mode='widthFix'></image>
+    <text>想起儿时，我一起床，满脑子都是，打糍粑，放烟花，拜年，大街小巷上热闹非凡</text>
+  </view>
+  <view class='author-wrap'>
+    <text>--莎士比亚</text>
+  </view>
+</view>

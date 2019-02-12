@@ -1,0 +1,38 @@
+<!--pages/video/video.wxml-->
+<view>
+  <view class='head'>
+    {{headword}}
+  </view>
+  <view class='date'>
+    10月10日
+  </view>
+  <view class='video-wrap'>
+    <video 
+    id='myVideo'
+    class='video'
+    controls='{{true}}'
+    enable-danmu='{{true}}'
+    danmu-btn="{{true}}"
+    danmu-list='{{danmuWord}}'
+    initial-time='0'
+    duration='100'
+    bindplay='videoPlay'
+    src='http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400'>
+      <cover-view class='cover-wrap' wx:if='{{isHidden}}'>
+        <cover-image class='video-image' src='/image/avatar.png'></cover-image>
+        <cover-view class='play-wrap' bindtap='toPlay'>
+          <cover-view class='play'></cover-view>
+          <cover-view class='time'>10"</cover-view>
+        </cover-view>
+      </cover-view>
+    </video>
+  </view>
+  <view>
+    <text space='ensp'>
+    一夜之间，一场雷电引发的山火烧毁了美丽的“森林庄园”，刚刚从祖父那里继承了这座庄园的保罗·迪克陷入了一筹莫展的境地。
+　　他经受不起打击，闭门不出，茶饭不思，眼睛熬出了血丝。一个多月过去了，年已古稀的外祖母获悉此事，意味深长地对保罗说：“小伙子，庄园成了废墟并不可怕，可怕的是你的眼睛失去了光泽，一天一天地老去。一双老去的眼睛，怎么能看得见希望？”
+　　保罗在外祖母的劝说下，一个人走出了庄园。
+　　他漫无目的地闲逛，在一条街道的拐弯处，他看到一家店铺的门前人头攒动，原来是一些家庭主妇正在排队购买木炭。那一块块躺在纸箱里的木炭忽然让保罗的眼睛一亮，使他看到了一线希望。于是在接下来的两个星期里，保罗雇了几名烧炭工，将庄园里烧焦的树木加工成优质的木炭，送到集市上的木炭经销店。
+    </text>
+  </view>
+</view>

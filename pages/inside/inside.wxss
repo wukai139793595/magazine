@@ -1,0 +1,29 @@
+/* pages/inside/inside.wxss */
+.container{
+  padding: 0 10rpx;
+  box-sizing:border-box;
+}
+
+.image-wrap{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+image{
+  width: 100%;
+}
+.image-wrap text{
+  width: 20em;
+  font-size: 36rpx;
+  letter-spacing: 4rpx;
+  margin-top: 30rpx;
+  line-height: 70rpx;
+}
+
+.author-wrap{
+  width: 100%;
+  margin-top: 20rpx;
+  text-align: right;
+}

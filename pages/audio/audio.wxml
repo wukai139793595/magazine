@@ -1,0 +1,19 @@
+
+<view class='audio-wrap'>
+  <view class='begin-wrap' bindtap='toBeginAudio'>
+    <image wx:if='{{!playing}}' src='/image/list/article/icon/begin.png'></image>
+    <image wx:else src='/image/list/article/icon/stop.png'></image>
+  </view>
+  <view class='audio-content'>
+    <view class='audio-name'>
+      <text>{{name}}</text>
+    </view>
+    <view class='author-wrap'><text class='author-name'>{{author}}</text></view>
+    <view class='progress-wrap'>
+      <progress percent='{{percent}}' show-info='{{true}}'></progress>
+    </view>
+    <view class='audio-time'>
+      <text>{{currentTime}}</text>
+    </view>
+  </view>
+</view>

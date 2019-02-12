@@ -1,0 +1,10 @@
+<!--pages/index/index.wxml-->
+<view class='container'>
+    <image class='avatar' src='../../image/avatar.png'></image>
+    <text class='nickname' space='emsp'>杉  杉</text>
+    <text class='welcome' bind:tap='toImage'>欢迎来到河口</text>
+    <!-- <view class='wrapper' bindtap='clickWrapper' data-father='wrapper'>
+      wrapper
+      <view class='box' bindtap='clickBox' data-child='box'>box</view>
+    </view> -->
+</view>

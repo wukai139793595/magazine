@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/audio/audio",
+    "pages/video/video",
+    "pages/banner/banner",
+    "pages/list/list",
+    "pages/index/index",
+    "pages/inside/inside",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "enablePullDownRefresh": true
+  }
+}
